@@ -26,6 +26,7 @@ my-hermes-skills/
 |---|---|
 | `android-build-env/` | 编译 Android 项目从零搭环境，或遇到 AGP / SDK / 代理报错 |
 | `se-first-code-change/` | 改代码起笔前自审：单点真相 / 命名单元 / 面积最小，存量改动默认禁止、改之前先打报告 |
+| `hermes-issues/` | 查 NousResearch/hermes-agent 本地 issue/PR 库（5 套查询方法 + 7 天热点判据） |
 
 ## 使用方式
 
