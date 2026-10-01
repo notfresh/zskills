@@ -9,11 +9,16 @@
 
 ```
 my-hermes-skills/
-├── README.md                  ← 本文件
-└── my-hermes-skills/           ← Android 项目编译环境搭建
+├── README.md                          ← 本文件
+├── my-hermes-skills/                   ← Android 项目编译环境搭建 skill
+│   ├── SKILL.md
+│   └── android-build.md
+└── se-first-code-change/              ← 改代码起笔前自审 skill
     ├── SKILL.md
-    └── android-build.md       ← 实战详细（跟 SKILL.md 一起，文件夹自包含）
+    └── literal-interpretation-verbs.md
 ```
+
+每个 skill 一个文件夹，直接放仓根，不嵌套 `skills/`。拷给谁用整个文件夹拷走。
 
 ## 当前收录
 
@@ -32,13 +37,14 @@ cp -r my-hermes-skills ~/.hermes/skills/
 ```
 
 ### 添加新 skill
-1. 新建 `<skill-name>/` 文件夹（直接放仓根，不嵌套 `skills/`）
+1. 在仓根新建 `<skill-name>/` 文件夹（**不**嵌套 `skills/`）
 2. 文件夹里放 `SKILL.md`（主体）+ 任何辅助材料（详情/脚本/参考）。**整个文件夹自包含**
-4. `git add -A && git commit -m "..."`
+3. `git add -A && git commit -m "..."`
 
 ## 维护约定
 
 - **每个 skill = 一个文件夹**，所有材料（SKILL.md + 任何辅助文档）都放一起，拷走即用
+- **文件夹直接放仓根**，不嵌套 `skills/` 之类的中间目录
 - **description 硬上限 60 字符**，body 精简 —— 上下文宝贵
 - **不要在这条仓里塞无关代码** —— 这是 skill 备份仓，不是项目源码仓
 
