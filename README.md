@@ -5,22 +5,22 @@
 
 ## 结构
 
+每个 skill 一个独立文件夹（自包含）：拷给谁用，谁整个文件夹拷走就行。
+
 ```
 my-hermes-skills/
 ├── README.md                  ← 本文件
-├── skills/
-│   └── my-hermes-skills/       ← Android 项目编译环境搭建
-│       └── SKILL.md
-└── docs/
-    └── android-build.md       ← skill 引用的详细实战记录
+└── my-hermes-skills/           ← Android 项目编译环境搭建
+    ├── SKILL.md
+    └── android-build.md       ← 实战详细（跟 SKILL.md 一起，文件夹自包含）
 ```
 
 ## 当前收录
 
-| Skill | 触发场景 |
+| 文件夹 | 触发场景 |
 |---|---|
-| `my-hermes-skills` | 编译 Android 项目从零搭环境，或遇到 AGP / SDK / 代理报错 |
-| `se-first-code-change` | 改代码起笔前自审：单点真相 / 命名单元 / 面积最小，存量改动默认禁止、改之前先打报告 |
+| `my-hermes-skills/` | 编译 Android 项目从零搭环境，或遇到 AGP / SDK / 代理报错 |
+| `se-first-code-change/` | 改代码起笔前自审：单点真相 / 命名单元 / 面积最小，存量改动默认禁止、改之前先打报告 |
 
 ## 使用方式
 
@@ -28,21 +28,19 @@ my-hermes-skills/
 skill 加载器只看 `~/.hermes/skills/<name>/SKILL.md`，所以备份后还要同步过去：
 
 ```bash
-cp -r skills/my-hermes-skills ~/.hermes/skills/
+cp -r my-hermes-skills ~/.hermes/skills/
 ```
 
-或者用 Hermes 的 `skill_manage` 工具。
-
 ### 添加新 skill
-1. 在 `skills/<name>/SKILL.md` 写主体（**保持简短**，description 60 字符硬上限）
-3. 详细安排到 `docs/<name>.md`，skill 里只放链接/路径
+1. 新建 `<skill-name>/` 文件夹（直接放仓根，不嵌套 `skills/`）
+2. 文件夹里放 `SKILL.md`（主体）+ 任何辅助材料（详情/脚本/参考）。**整个文件夹自包含**
 4. `git add -A && git commit -m "..."`
 
 ## 维护约定
 
-- **不在这条复制三里塞无关代码** —— 这是 skill 备份仓，不是项目源码仓
+- **每个 skill = 一个文件夹**，所有材料（SKILL.md + 任何辅助文档）都放一起，拷走即用
 - **description 硬上限 60 字符**，body 精简 —— 上下文宝贵
-- **每个 skill 配一个详细文档** —— 详细骨架留项目自带文档，按需查
+- **不要在这条仓里塞无关代码** —— 这是 skill 备份仓，不是项目源码仓
 
 ## 备份方式
 仓库是分两块存的：

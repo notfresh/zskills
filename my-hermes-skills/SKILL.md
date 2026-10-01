@@ -52,4 +52,4 @@ cd <project> && bash ./gradlew :app:assembleDebug --no-daemon --console=plain
 
 ## 详细参考
 
-- 实战案例 + 关系图：见同仓 `docs/android-build.md`
+- 实战案例 + 关系图：见本目录下 `android-build.md`
