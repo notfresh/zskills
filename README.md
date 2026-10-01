@@ -10,7 +10,7 @@
 ```
 my-hermes-skills/
 ├── README.md                          ← 本文件
-├── my-hermes-skills/                   ← Android 项目编译环境搭建 skill
+├── android-build-env/                   ← Android 项目编译环境搭建 skill
 │   ├── SKILL.md
 │   └── android-build.md
 └── se-first-code-change/              ← 改代码起笔前自审 skill
@@ -24,7 +24,7 @@ my-hermes-skills/
 
 | 文件夹 | 触发场景 |
 |---|---|
-| `my-hermes-skills/` | 编译 Android 项目从零搭环境，或遇到 AGP / SDK / 代理报错 |
+| `android-build-env/` | 编译 Android 项目从零搭环境，或遇到 AGP / SDK / 代理报错 |
 | `se-first-code-change/` | 改代码起笔前自审：单点真相 / 命名单元 / 面积最小，存量改动默认禁止、改之前先打报告 |
 
 ## 使用方式
@@ -33,7 +33,7 @@ my-hermes-skills/
 skill 加载器只看 `~/.hermes/skills/<name>/SKILL.md`，所以备份后还要同步过去：
 
 ```bash
-cp -r my-hermes-skills ~/.hermes/skills/
+cp -r android-build-env ~/.hermes/skills/
 ```
 
 ### 添加新 skill

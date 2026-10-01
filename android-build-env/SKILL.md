@@ -1,5 +1,5 @@
 ---
-name: my-hermes-skills
+name: android-build-env
 description: Use when compiling an Android project from scratch or troubleshooting build errors. Three-step bootstrap (JDK + SDK + Gradle), proxy / sandbox-detour pitfalls.
 ---
 
