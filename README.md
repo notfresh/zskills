@@ -20,6 +20,7 @@ my-hermes-skills/
 | Skill | 触发场景 |
 |---|---|
 | `my-hermes-skills` | 编译 Android 项目从零搭环境，或遇到 AGP / SDK / 代理报错 |
+| `se-first-code-change` | 改代码起笔前自审：单点真相 / 命名单元 / 面积最小，存量改动默认禁止、改之前先打报告 |
 
 ## 使用方式
 
