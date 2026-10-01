@@ -222,7 +222,7 @@ User asked for an ugly-dialog fix in SubjectDetailActivity. I started editing `L
 
 ## Reference: Literal-Verb Lookup
 
-When the user phrases a request with a "could-mean-richer" verb, consult `references/literal-interpretation-verbs.md` before defaulting to the richer interpretation. The reference contains:
+When the user phrases a request with a "could-mean-richer" verb, consult `literal-interpretation-verbs.md` (同级文件) before defaulting to the richer interpretation. The reference contains:
 
 - A verb → literal-meaning table (加按钮, 拒绝, 切换全局, 拦截所有, 以后都 X, 简单粗暴, 不要复杂, 维持现状 …)
 - Two concrete failure-pattern walkthroughs from this user's sessions (Android toolbar mode-switch + minimum-change refactor)
