@@ -15,6 +15,7 @@ my-hermes-skills/
 │   └── android-build.md
 ├── hermes-issues/                     ← hermes-agent issue/PR 本地库查询 skill
 ├── hermes-memory/                     ← 操作 hermes-agent-memories 仓（AX Graph 外部 base）
+├── axgraph/                           ← AX Graph 源码图项目入口
 └── se-first-code-change/              ← 改代码起笔前自审 skill
     ├── SKILL.md
     └── literal-interpretation-verbs.md
@@ -30,6 +31,7 @@ my-hermes-skills/
 | `se-first-code-change/` | 改代码起笔前自审：单点真相 / 命名单元 / 面积最小，存量改动默认禁止、改之前先打报告 |
 | `hermes-issues/` | 查 NousResearch/hermes-agent 本地 issue/PR 库（5 套查询方法 + 7 天热点判据） |
 | `hermes-memory/` | 操作 hermes-agent-memories 仓：写/查「第 N 条记忆」，`number` 字段就是本仓唯一扩充 |
+| `axgraph/` | AX Graph 源码图项目入口：指向 `/root/projects/axgraph/`，进项目先读 `docs/AGENTS.md` |
 
 ## 使用方式
 
