@@ -32,6 +32,7 @@ my-hermes-skills/
 | `hermes-issues/` | 查 NousResearch/hermes-agent 本地 issue/PR 库（5 套查询方法 + 7 天热点判据） |
 | `hermes-memory/` | 操作 hermes-agent-memories 仓：写/查「第 N 条记忆」，`number` 字段就是本仓唯一扩充 |
 | `axgraph/` | AX Graph 源码图项目入口：指向 `/root/projects/axgraph/`，进项目先读 `docs/AGENTS.md` |
+| `function-explain/` | 给 Python 方法生成「Args/Returns/Side Effects/Note」四段说明文档（独立 `.func-explain.md`，不动原文件） |
 
 ## 使用方式
 
