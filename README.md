@@ -33,6 +33,8 @@ my-hermes-skills/
 | `hermes-memory/` | 操作 hermes-agent-memories 仓：写/查「第 N 条记忆」，`number` 字段就是本仓唯一扩充 |
 | `axgraph/` | AX Graph 源码图项目入口：指向 `/root/projects/axgraph/`，进项目先读 `docs/AGENTS.md` |
 | `function-explain/` | 给 Python 方法生成「Args/Returns/Side Effects/Note」四段说明文档（独立 `.func-explain.md`，不动原文件） |
+| `smart/` | 先评估任务难度：简单的直接执行，复杂的先出方案+成本+回滚，等用户批准 |
+| `expose-code/` | 把本地代码目录暴露到公网：走 `code-online`，`cli.py add <id> <路径>` 一条命令 |
 
 ## 使用方式
 
